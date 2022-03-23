@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-bg);
+}
+button {
+  height: 25px;
+  margin: 15px;
+}
+
+:root {
+  --main-bg: #ffff;
+  --second-bg: #fafafb;
+  --txt-color: #455560;
+
+  --main-bg-light: #ffffff;
+  --second-bg-light: #fafafb;
+  --txt-color-light: #3a0764;
+  --box-shadow-light: rgba(149, 157, 165, 0.55) 0px 8px 24px;
+  --box-shadow-dark: rgba(225, 231, 238, 0.884) 0px 8px 24px;
+  --main-bg-dark: #2d2d2d;
+  --second-bg-dark: #202020;
+  --txt-color-dark: #c9c8a2;
+}
+
+.theme-mode-light {
+  --main-bg: var(--main-bg-light);
+  --second-bg: var(--second-bg-light);
+  --txt-color: var(--txt-color-light);
+}
+
+.theme-mode-dark {
+  --main-bg: var(--main-bg-dark);
+  --second-bg: var(--second-bg-dark);
+  --txt-color: var(--txt-color-dark);
+}
+
+h1 {
+  color: var(--txt-color);
+  font-size: 3em;
+}
